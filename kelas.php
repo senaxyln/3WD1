@@ -99,8 +99,81 @@
                 <td>" . $hasya["kelas"] . "</td>
                 <td>" . $hasya["kota asal"] . "</td>
             </tr>";
+            
+            echo "
+           <div class='col-md-4 mb-3'>
+                <div class='card' style='width: 18rem;'>
+                   <div class='card-body'>
+                        <h5 class='card-title'>Nama: " . $salwa['nama'] . "</h5>
+                    </div>
+                    <ul class='list-group list-group-flush'>
+                        <li class='list-group-item'>nim: ".$salwa['nim']."</li>
+                        <li class='list-group-item'>nama: " . $salwa['kelas'] . "</li>
+                        <li class='list-group-item'>jenis kelamin: " . $salwa['jenis kelamin'] . "</li>
+                        <li class='list-group-item'>kota asal: " . $salwa['kota asal'] . "</li>
+                    </ul>
+                </div>
+                ";
+
+                echo "
+                <div class='col-md-4 mb-3'>
+                <div class='card' style='width: 18rem;'>
+                   <div class='card-body'>
+                        <h5 class='card-title'>Nama: " . $cyntia['nama'] . "</h5>
+                    </div>
+                    <ul class='list-group list-group-flush'>
+                            <li class='list-group-item'>nim: ".$cyntia['nim']."</li>
+                            <li class='list-group-item'>nama: " . $cyntia['kelas'] . "</li>
+                            <li class='list-group-item'>jenis kelamin: " . $cyntia['jenis kelamin'] . "</li>
+                            <li class='list-group-item'>kota asal: " . $cyntia['kota asal'] . "</li>
+                        </ul>
+                    </div>
+                    ";
+                echo "
+                 <div class='col-md-4 mb-3'>
+                <div class='card' style='width: 18rem;'>
+                   <div class='card-body'>
+                        <h5 class='card-title'>Nama: " . $aura['nama'] . "</h5>
+                    </div>
+                    <ul class='list-group list-group-flush'>
+                            <li class='list-group-item'>nim: ".$aura['nim']."</li>
+                            <li class='list-group-item'>nama: " . $aura['kelas'] . "</li>
+                            <li class='list-group-item'>jenis kelamin: " . $aura['jenis kelamin'] . "</li>
+                            <li class='list-group-item'>kota asal: " . $aura['kota asal'] . "</li>
+                        </ul>
+                    </div>
+                    ";
+                    echo "
+                     <div class='col-md-4 mb-3'>
+                <div class='card' style='width: 18rem;'>
+                   <div class='card-body'>
+                        <h5 class='card-title'>Nama: " . $mutia['nama'] . "</h5>
+                    </div>
+                    <ul class='list-group list-group-flush'>
+                                <li class='list-group-item'>nim: ".$mutia['nim']."</li>
+                                <li class='list-group-item'>nama: " . $mutia['kelas'] . "</li>
+                                <li class='list-group-item'>jenis kelamin: " . $mutia['jenis kelamin'] . "</li>
+                                <li class='list-group-item'>kota asal: " . $mutia['kota asal'] . "</li>
+                            </ul>
+                        </div>
+                        ";
+                        echo "
+                         <div class='col-md-4 mb-3'>
+                    <div class='card' style='width: 18rem;'>
+                    <div class='card-body'>
+                        <h5 class='card-title'>Nama: " . $hasya['nama'] . "</h5>
+                    </div>
+                    <ul class='list-group list-group-flush'>
+                                <li class='list-group-item'>nim: ".$hasya['nim']."</li>
+                                <li class='list-group-item'>nama: " . $hasya['kelas'] . "</li>
+                                <li class='list-group-item'>jenis kelamin: " . $hasya['jenis kelamin'] . "</li>
+                                <li class='list-group-item'>kota asal: " . $hasya['kota asal'] . "</li>
+                            </ul>
+                        </div>
+                        ";
 ?>
     </tbody>
 </table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-7AxqlPVFQQiAaOnlFbEVafTqEvoS3w+eytmE11uEtmnUJvgtlcEKJZyPTsXMaCZg" crossorigin="anonymous"></script>
 </body>
 </html>
