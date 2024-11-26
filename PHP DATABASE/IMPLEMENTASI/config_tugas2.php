@@ -11,7 +11,7 @@ define("DB_PASSWORD", "");
  * Fungsi untuk membuat koneksi ke database menggunakan PDO.
  * @return PDO
  */
-function getConnectionTugas2(): PDO
+function getConnection(): PDO
 {
     try {
         $dsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME;
@@ -25,7 +25,7 @@ function getConnectionTugas2(): PDO
 
 require_once 'config_tugas2.php';
 
-$connection = getConnectionTugas2();
+$connection = getConnection();
 $sql = "INSERT INTO customers (id, name, email) VALUES (:id, :name, :email)";
 $statement = $connection->prepare($sql);
 $statement->bindParam(":id", $id);
