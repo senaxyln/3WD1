@@ -1,11 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
-    header("Location: login.php");
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -14,7 +6,8 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <h1>Selamat datang, <?= htmlspecialchars($_SESSION['username']); ?> (Admin)</h1>
-    <a href="logout.php">Logout</a>
+    <h1>Selamat datang di Admin Dashboard</h1>
+    <p>Halaman ini dapat diakses langsung tanpa login.</p>
+    <a href="user_dashboard.php">Pergi ke User Dashboard</a>
 </body>
 </html>
