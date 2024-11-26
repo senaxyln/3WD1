@@ -3,7 +3,7 @@
 // Konfigurasi Database
 define("DB_HOST", "localhost");
 define("DB_PORT", 3306);
-define("DB_NAME", "belajar_php_database_form");
+define("DB_NAME", "belajar_php_database");
 define("DB_USERNAME", "root");
 define("DB_PASSWORD", "");
 
@@ -22,14 +22,13 @@ function getConnection(): PDO
         die("Koneksi gagal: " . $exception->getMessage());
     }
 }
-
-require_once 'config_tugas2.php';
+ 
+require_once 'config.php';
 
 $connection = getConnection();
-$sql = "INSERT INTO customers (id, name, email) VALUES (:id, :name, :email)";
-$statement = $connection->prepare($sql);
-$statement->bindParam(":id", $id);
-$statement->bindParam(":name", $name);
-$statement->bindParam(":email", $email);
-$statement->execute();
+$sql = "SELECT * FROM customers";
+$result = $connection->query($sql);
+foreach ($result as $row) {
+    var_dump($row);
+}
 $connection = null;

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'config_tugas1.php'; // Memanggil file koneksi
+require_once 'config.php'; // Memanggil file koneksi
 
 try {
     $connection = getConnection();

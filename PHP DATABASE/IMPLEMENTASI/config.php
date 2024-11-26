@@ -23,7 +23,7 @@ function getConnection(): PDO
     }
 }
  
-require_once 'config_tugas1.php';
+require_once 'config.php';
 
 $connection = getConnection();
 $sql = "SELECT * FROM customers";
