@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+    header("Location: login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,8 +14,7 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <h1>Selamat datang di Admin Dashboard</h1>
-    <p>Halaman ini dapat diakses langsung di login.</p>
-    <a href="login.php">Pergi ke Halaman Log In</a>
+    <h1>Selamat Datang, <?= htmlspecialchars($_SESSION['username']); ?> (Admin)</h1>
+    <a href="logout.php">Logout</a>
 </body>
 </html>
