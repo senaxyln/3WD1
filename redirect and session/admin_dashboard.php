@@ -97,7 +97,8 @@ try {
                         <?php endif; ?>
                     </td>
                     <td>
-                        <a href="edit_product.php?id=<?= $product['id']; ?>">Edit</a>
+                        <a href="edit_product.php?id=<?= $product['id']; ?>">Edit</a> | 
+                        <a href="delete_product.php?id=<?= $product['id']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus barang ini?');">Hapus</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
